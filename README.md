@@ -86,8 +86,8 @@ flowchart LR
   P --> G{"node tools/copy-gate.js"}:::build
   G -->|0 hits| W[wrangler deploy]:::real
   G -->|hit| X[fix the copy or amend ADR-0002]:::build
-  W --> CF[Cloudflare Worker<br/>ltda-site]:::real
-  CF --> DOM[livethedreamathletics.com<br/>www → apex 301]:::real
+  W --> CF["Cloudflare Worker<br/>ltda-site"]:::real
+  CF --> DOM["livethedreamathletics.com<br/>www → apex 301"]:::real
 ```
 
 Request handling is deliberately tiny:
@@ -114,7 +114,7 @@ The archive is 33 photos and clips of the work. Each file is hashed, the hashes 
 flowchart LR
   classDef real fill:#e3f1eb,stroke:#187a5a,color:#0f3d2c
   classDef plain fill:#f7f6f2,stroke:#9a9a91,color:#33332f
-  F[33 files<br/>public/media/*]:::plain --> S[sha256 per file]:::real
+  F["33 files<br/>public/media/*"]:::plain --> S[sha256 per file]:::real
   S --> L["leaf = keccak256(sha256)"]:::real
   L --> T[sorted-pair keccak256 tree]:::real
   T --> ROOT["root 0x6194…b08f"]:::real
@@ -146,12 +146,12 @@ No personal data about any athlete is written on chain. The contracts' source li
 flowchart LR
   classDef build fill:#fff3e0,stroke:#e97a22,color:#5a2d00
   classDef plan fill:#f1f0ea,stroke:#9a9a91,color:#33332f
-  G([Donor gives<br/>card, bank or USDC]):::build --> R[Receipt: supporter badge<br/>non-transferable, no cash value]:::build
+  G(["Donor gives<br/>card, bank or USDC"]):::build --> R["Receipt: supporter badge<br/>non-transferable, no cash value"]:::build
   G --> POOL[(Fund balance)]:::build
-  A([Family asks<br/>coach confirms]):::build --> AP{Grant approved?}:::build
-  AP -->|yes| PAY[Paid straight to the<br/>vendor or program]:::build
+  A(["Family asks<br/>coach confirms"]):::build --> AP{Grant approved?}:::build
+  AP -->|yes| PAY["Paid straight to the<br/>vendor or program"]:::build
   POOL --> PAY
-  PAY --> LED[(Public ledger<br/>purpose + amount, never a name)]:::build
+  PAY --> LED[("Public ledger<br/>purpose + amount, never a name")]:::build
   AP -->|no| END([Declined, logged privately]):::plan
 ```
 
@@ -166,12 +166,12 @@ flowchart LR
   classDef real fill:#e3f1eb,stroke:#187a5a,color:#0f3d2c
   classDef build fill:#fff3e0,stroke:#e97a22,color:#5a2d00
   classDef gated fill:#fdecea,stroke:#c62828,color:#5a0f0f
-  Y[LTDA: youth record<br/>gear, coaching, milestones]:::real --> K[Know Your Athlete<br/>private profile, guardian-first,<br/>signed ES256 assertions]:::build
-  K --> S[Signed terms<br/>hash-chained record, live receipt]:::real
-  S --> LGR[(Public ledger<br/>page + JSON)]:::real
-  LGR --> T1[x402 pay-per-call access<br/>USDC on Base, for software]:::build
+  Y["LTDA: youth record<br/>gear, coaching, milestones"]:::real --> K["Know Your Athlete<br/>private profile, guardian-first,<br/>signed ES256 assertions"]:::build
+  K --> S["Signed terms<br/>hash-chained record, live receipt"]:::real
+  S --> LGR[("Public ledger<br/>page + JSON")]:::real
+  LGR --> T1["x402 pay-per-call access<br/>USDC on Base, for software"]:::build
   LGR --> T2["ERC-8004 public identity<br/>of the rail that gets paid<br/>agent #95721 on Base"]:::real
-  S -.-> AT[On-chain attestation<br/>of agreement digests]:::gated
+  S -.-> AT["On-chain attestation<br/>of agreement digests"]:::gated
 ```
 
 | On nil33.com | State | Link |
@@ -198,11 +198,11 @@ flowchart TD
   classDef build fill:#fff3e0,stroke:#e97a22,color:#5a2d00
   classDef plan fill:#f1f0ea,stroke:#9a9a91,color:#33332f
   LTDA[Live the Dream Athletics]:::real
-  LTDA --> B1[1 · Bridges<br/>gear drives, one anchor per shipment]:::plan
-  LTDA --> B2[2 · Family Fund<br/>grants to vendors, public ledger]:::build
-  LTDA --> B3[3 · Passports<br/>athlete-owned verified record]:::build
-  LTDA --> B4[4 · Events<br/>The 24, Bridges weekend]:::plan
-  LTDA --> B5[5 · Product<br/>Power Punch funds the rest]:::real
+  LTDA --> B1["1 · Bridges<br/>gear drives, one anchor per shipment"]:::plan
+  LTDA --> B2["2 · Family Fund<br/>grants to vendors, public ledger"]:::build
+  LTDA --> B3["3 · Passports<br/>athlete-owned verified record"]:::build
+  LTDA --> B4["4 · Events<br/>The 24, Bridges weekend"]:::plan
+  LTDA --> B5["5 · Product<br/>Power Punch funds the rest"]:::real
   B5 -->|"90% of collectible sales, planned"| B2
   B3 -->|carries into| NIL[NIL33]:::real
 ```
@@ -221,13 +221,13 @@ flowchart TD
 flowchart TD
   classDef real fill:#e3f1eb,stroke:#187a5a,color:#0f3d2c
   classDef plain fill:#f7f6f2,stroke:#9a9a91,color:#33332f
-  U[UnyKorn LLC · Wyoming<br/>formed 2026-07-01, filing 2026-002019968]:::plain
-  U --> L[Live the Dream Athletics<br/>youth side · this repo]:::real
-  U --> N[NIL33<br/>athlete side · nil33.com]:::real
-  U --> P[Power Punch<br/>product · powerpunchathletics.com]:::real
-  U --> F[3FS<br/>player projections · 3fs.app]:::real
+  U["UnyKorn LLC · Wyoming<br/>formed 2026-07-01, filing 2026-002019968"]:::plain
+  U --> L["Live the Dream Athletics<br/>youth side · this repo"]:::real
+  U --> N["NIL33<br/>athlete side · nil33.com"]:::real
+  U --> P["Power Punch<br/>product · powerpunchathletics.com"]:::real
+  U --> F["3FS<br/>player projections · 3fs.app"]:::real
   L <-->|record carries into| N
-  P -->|funds, planned| L
+  P -->|"funds, planned"| L
   N -->|x402 settles to| G["Genesis402 rail<br/>ERC-8004 agent #95721"]:::real
 ```
 
