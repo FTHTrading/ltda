@@ -1,0 +1,18 @@
+# Keys, wallets and secrets: never commit
+**/wallets/
+*.token
+*.pem
+*.key
+*keystore*
+*.jwk
+*.jwk.json
+.env
+.env.*
+*.env
+.dev.vars
+**/.dev.vars
+
+# Build output and dependencies
+node_modules/
+.wrangler/
+__pycache__/

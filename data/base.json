@@ -1,0 +1,26 @@
+{
+  "network": "base",
+  "chainId": 8453,
+  "unit": "0xCf1660AD2f6D0DD2E14924Fe96cDFC5199D6f052",
+  "affiliate": "0xA67Ae45E1CB922A6060890EDCA0A8dB1174B79F7",
+  "owner": "0x27Ef26772c1F2E27756D944442b6E8641C4a07e7",
+  "minter": "0x00212493b5Af036Cd7cda7552492195006f944A1",
+  "historyRoot": "0x619420a4b2ae498f92e46ee1d3590514a0dec578f45bda94e69692b86934b08f",
+  "historyUri": "https://YOUR-DOMAIN/archive/manifest.json",
+  "txs": {
+    "deployUnit": "0x0472b9a3ecd233f9c88f43194acd9a993d2007218ab0320c36a0295581abb970",
+    "deployAffiliate": "0x49ea33e48b443864f1446b6fa3d948409099f152a5d80a6a8fdb852e4782a79d",
+    "setMinter": "0x6f54ae699023091fc42966cb94a1be1a0594eac5db9f70742d2bc09907c4a74b",
+    "openRun": "0x34bc4f3a3f9516be221d6d872a8dd2d7e991369a192236450ba7787a90668487",
+    "anchorHistory": "0x11797ee123b3ced26d14612d73f92096660fa6fa2ef2f4a25f8382ad32bcb272",
+    "mint0001": "0xbcc577805ccd213f43e07a438159888eba2e7c69ca6c0df5998cc67695c754e3"
+  },
+  "at": "2026-09-17T15:34:07.699Z",
+  "siteUrl": "https://powerpunchathletics.com",
+  "finish": {
+    "unitBaseURI": "0x7ebe7ad6cae244d20be3298cd2c1bf2a074f9dc25404e375c1ea589386e20b09",
+    "affBaseURI": "0x97f377e14b0d4afcd02186824c8602763f23396a9c5dfabf175a786dd683339b",
+    "anchorHistory2": "0x57a1d3141eb369eb171f9304f234b515890d8c64c7602d194a36e8b64ae57d75",
+    "at": "2026-09-18T01:59:17.258Z"
+  }
+}

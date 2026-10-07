@@ -1,0 +1,176 @@
+{
+  "name": "Power Punch history archive",
+  "version": 1,
+  "built": "2026-09-17T13:00:29.423Z",
+  "leaf": "keccak256(sha256(file))",
+  "tree": "sorted-pair keccak256",
+  "merkleRoot": "0x619420a4b2ae498f92e46ee1d3590514a0dec578f45bda94e69692b86934b08f",
+  "count": 33,
+  "items": [
+    {
+      "path": "media/cage-toss-1.jpg",
+      "bytes": 26670,
+      "sha256": "0x73ead037ca9c67466b16ce31813fe0c1f7130d48346d55cbe4723f6c63adbadb"
+    },
+    {
+      "path": "media/cage-toss-1.mp4",
+      "bytes": 940013,
+      "sha256": "0x488247e1d3242663437e59f15ecf9db930fccb6c6896659a3ec4ac3ff38819e8"
+    },
+    {
+      "path": "media/cage-toss-2.jpg",
+      "bytes": 59937,
+      "sha256": "0xfbcda91bf2c7a2de6fa29fd9805825651b8482e8dc4eee05e44f4c20a5c10407"
+    },
+    {
+      "path": "media/cage-toss-2.mp4",
+      "bytes": 2483220,
+      "sha256": "0x58984935e22a6a11f0a27ce86a7b8837856aef1d34b2eddf704cef6bd435ab52"
+    },
+    {
+      "path": "media/coach-cage.jpg",
+      "bytes": 118036,
+      "sha256": "0x308238d7e307cb81426055b1b93e355d02dc94aab96c13df7cb813ff5163a2c9"
+    },
+    {
+      "path": "media/coach-demo-1.jpg",
+      "bytes": 43439,
+      "sha256": "0xcb38204fc6619ac631bd0302338a2e749c26470aa61219900b12719e30ac0a13"
+    },
+    {
+      "path": "media/coach-demo-1.mp4",
+      "bytes": 3533043,
+      "sha256": "0x03c83bcbb431dcad763ad7cd15d7a8843128b6a6f811b405cb7bbf6b23fd3d51"
+    },
+    {
+      "path": "media/coach-demo-2.jpg",
+      "bytes": 48988,
+      "sha256": "0x8eaa4afc3d3fc7e6c58041efc28128059d97295774fb49fd01faf9068d5aebe0"
+    },
+    {
+      "path": "media/coach-demo-2.mp4",
+      "bytes": 2341946,
+      "sha256": "0x5d58585d09bcca393e30a3ca4bb23b9b4f46e0ae9e408e3315779d21a4b397bf"
+    },
+    {
+      "path": "media/dugout.jpg",
+      "bytes": 304637,
+      "sha256": "0x725724710269cedfa97a2b360d6d4b8f7c49ef60f31ecc31c85f710c83f6b465"
+    },
+    {
+      "path": "media/kevan-original-power-punch.png",
+      "bytes": 423562,
+      "sha256": "0x4c74ecacfbfbb9d4e953744a7fa24618478fbd53d335bed9418e25564f319ed7"
+    },
+    {
+      "path": "media/ltd-batter-mark.jpg",
+      "bytes": 14291,
+      "sha256": "0xfc437cbdea185a3653a0d09fec6b6dd10ce77d52a58751451a347ca8e7030d5e"
+    },
+    {
+      "path": "media/ltd-logo.png",
+      "bytes": 190491,
+      "sha256": "0x08e6c2949cacc340eccd1d07fb959fa9a19096334b6a38c9b9dd2cf6eb8316b7"
+    },
+    {
+      "path": "media/old-school-tire.jpg",
+      "bytes": 128405,
+      "sha256": "0x162bbc41eb29a5ca142d538f2d2602d27dd317ef41adbca4ec3249c2a15e4e26"
+    },
+    {
+      "path": "media/power-punch-logo.png",
+      "bytes": 164259,
+      "sha256": "0x601ad2e7339c7faeb7ad609be09fde565ec4331c02dcbcffa508819b6d6c7373"
+    },
+    {
+      "path": "media/shoe-store.jpg",
+      "bytes": 170549,
+      "sha256": "0xafafd5167eaf05ceb74807431cd2971a989c34c9324c185320c1f59adebb355d"
+    },
+    {
+      "path": "media/sprint-1.jpg",
+      "bytes": 24299,
+      "sha256": "0x311f79978805a2af4dc21e2ce328fe0c9932c09e04f14c096b2f7f45681e1494"
+    },
+    {
+      "path": "media/sprint-1.mp4",
+      "bytes": 433203,
+      "sha256": "0x4970a0b0857b9334728ad1ad36a3b17752c65de6c6c4a207ad12b3fed3a4ec3c"
+    },
+    {
+      "path": "media/sprint-2.jpg",
+      "bytes": 16020,
+      "sha256": "0x05fa3bf5915d40988576f529fce9c0b7a9480e7ad4a29aacfba800cd971ca187"
+    },
+    {
+      "path": "media/sprint-2.mp4",
+      "bytes": 209077,
+      "sha256": "0x4e5213c157dd2a6ac8eac9a9298064b9cd10d0a061490ca655fb88c3ed4ad61e"
+    },
+    {
+      "path": "media/stadium-four.jpg",
+      "bytes": 173185,
+      "sha256": "0xa12bcc8509c463d858fcae5030abc536dc6e830e173953f2de6611480f68ee43"
+    },
+    {
+      "path": "media/tire-1.jpg",
+      "bytes": 32339,
+      "sha256": "0x1b4fa914c449da46414afd68f6af70650617bd83106d46caf23c36558ff21619"
+    },
+    {
+      "path": "media/tire-1.mp4",
+      "bytes": 479135,
+      "sha256": "0xdc931aefdd0b84f008f43dc9e8fbfb1c69652c967412ae6e6c4e41dad6969e52"
+    },
+    {
+      "path": "media/tire-2.jpg",
+      "bytes": 33665,
+      "sha256": "0x8eb43c7dc20785891cb33229c4784a32a942d14563b065b3c1e3159ccfb1182f"
+    },
+    {
+      "path": "media/tire-2.mp4",
+      "bytes": 966149,
+      "sha256": "0x99dc45e73461f7d76dc8e16eca8959172f65b8013b18ccc931bfb96f9c7b3985"
+    },
+    {
+      "path": "media/tire-3.jpg",
+      "bytes": 33679,
+      "sha256": "0xbacbd7d5b5ddc4b3ee0164651b271cba9bb5ab399a2007bf3bd6fdc4ca199b75"
+    },
+    {
+      "path": "media/tire-3.mp4",
+      "bytes": 1023924,
+      "sha256": "0xfe9c39c39b4d82c2b971bea2d29f20ee0572f84edfa97ac49ab30da019d8fdf9"
+    },
+    {
+      "path": "media/tire-4.jpg",
+      "bytes": 31751,
+      "sha256": "0x27d1e487c5a3386c41f990a0da5bdc3acb0080870810eb04ecc364627ecc0721"
+    },
+    {
+      "path": "media/tire-4.mp4",
+      "bytes": 675179,
+      "sha256": "0x7b52bec74a2161aaff90a219bca3d9ccb4ab1317f511aaed8c9ef5d696e8b836"
+    },
+    {
+      "path": "records/patent.json",
+      "bytes": 312,
+      "sha256": "0x8b37b1f1b82ec436701d22a7cbc5ae801f2a08a4550545c271f674c76ef63fd8"
+    },
+    {
+      "path": "records/playing-career.json",
+      "bytes": 1039,
+      "sha256": "0x8020bf6d5e47859639493cb6cd5a6deb8b5902b8596b74809a83a92037413f03"
+    },
+    {
+      "path": "records/retail.json",
+      "bytes": 612,
+      "sha256": "0xc5bd6d5dbcf0c1c481c2a16bb1bb3d08dd9ff91e823d56632ee1b871f9071896"
+    },
+    {
+      "path": "records/videos.json",
+      "bytes": 766,
+      "sha256": "0x777b3dc72f5c0e65697fc4efda7b4937e24fe1be6791edbf55b619cd771ded9c"
+    }
+  ]
+}

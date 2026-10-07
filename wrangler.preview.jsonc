@@ -1,0 +1,7 @@
+{
+  "name": "ltda-site-preview",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./public", "binding": "ASSETS", "not_found_handling": "404-page" },
+  "workers_dev": true
+}
