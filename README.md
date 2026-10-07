@@ -80,10 +80,10 @@ flowchart LR
   classDef build fill:#fff3e0,stroke:#e97a22,color:#5a2d00
   classDef plain fill:#f7f6f2,stroke:#9a9a91,color:#33332f
 
-  D[(data/base.json<br/>contracts, root, tx hashes)]:::plain --> B[build.py]:::real
-  M[(public/media/*<br/>public/archive/manifest.json)]:::plain --> B
-  B -->|writes| P[public/**/index.html<br/>+ site.css]:::real
-  P --> G{node tools/copy-gate.js}:::build
+  D[("data/base.json<br/>contracts, root, tx hashes")]:::plain --> B[build.py]:::real
+  M[("public/media/*<br/>public/archive/manifest.json")]:::plain --> B
+  B -->|writes| P["public/**/index.html<br/>+ site.css"]:::real
+  P --> G{"node tools/copy-gate.js"}:::build
   G -->|0 hits| W[wrangler deploy]:::real
   G -->|hit| X[fix the copy or amend ADR-0002]:::build
   W --> CF[Cloudflare Worker<br/>ltda-site]:::real
@@ -98,11 +98,11 @@ flowchart TD
   V([Visitor]) --> H{hostname}
   H -->|www.livethedreamathletics.com| R301[301 → apex]:::real
   H -->|livethedreamathletics.com| PTH{path}
-  PTH -->|/api/health| J[200 JSON ok]:::real
-  PTH -->|/nil33| N[302 → nil33.com]:::real
-  PTH -->|/pp, /powerpunch| PP[302 → powerpunchathletics.com]:::real
-  PTH -->|/dispatch| DI[302 → powerpunchathletics.com/dispatch/]:::real
-  PTH -->|anything else| A[(static assets<br/>public/)]:::real
+  PTH -->|"/api/health"| J[200 JSON ok]:::real
+  PTH -->|"/nil33"| N[302 → nil33.com]:::real
+  PTH -->|"/pp, /powerpunch"| PP[302 → powerpunchathletics.com]:::real
+  PTH -->|"/dispatch"| DI["302 → powerpunchathletics.com/dispatch/"]:::real
+  PTH -->|anything else| A[("static assets<br/>public/")]:::real
   A -->|missing| NF[404.html]:::real
 ```
 
@@ -120,8 +120,8 @@ flowchart LR
   T --> ROOT["root 0x6194…b08f"]:::real
   ROOT --> TX1["anchor tx 0x11797e…bcb272<br/>2026-09-17"]:::real
   ROOT --> TX2["re-anchor tx 0x57a1d3…e57d75<br/>2026-09-18"]:::real
-  T --> MAN[(public/archive/manifest.json)]:::real
-  MAN --> PROOF[/proof/ page with explorer links]:::real
+  T --> MAN[("public/archive/manifest.json")]:::real
+  MAN --> PROOF["/proof/ page with explorer links"]:::real
 ```
 
 | Record | Where to check | Source |
@@ -170,7 +170,7 @@ flowchart LR
   K --> S[Signed terms<br/>hash-chained record, live receipt]:::real
   S --> LGR[(Public ledger<br/>page + JSON)]:::real
   LGR --> T1[x402 pay-per-call access<br/>USDC on Base, for software]:::build
-  LGR --> T2[ERC-8004 public identity<br/>of the rail that gets paid<br/>agent #95721 on Base]:::real
+  LGR --> T2["ERC-8004 public identity<br/>of the rail that gets paid<br/>agent #95721 on Base"]:::real
   S -.-> AT[On-chain attestation<br/>of agreement digests]:::gated
 ```
 
@@ -203,7 +203,7 @@ flowchart TD
   LTDA --> B3[3 · Passports<br/>athlete-owned verified record]:::build
   LTDA --> B4[4 · Events<br/>The 24, Bridges weekend]:::plan
   LTDA --> B5[5 · Product<br/>Power Punch funds the rest]:::real
-  B5 -->|90% of collectible sales, planned| B2
+  B5 -->|"90% of collectible sales, planned"| B2
   B3 -->|carries into| NIL[NIL33]:::real
 ```
 
@@ -228,7 +228,7 @@ flowchart TD
   U --> F[3FS<br/>player projections · 3fs.app]:::real
   L <-->|record carries into| N
   P -->|funds, planned| L
-  N -->|x402 settles to| G[Genesis402 rail<br/>ERC-8004 agent #95721]:::real
+  N -->|x402 settles to| G["Genesis402 rail<br/>ERC-8004 agent #95721"]:::real
 ```
 
 Code homes: this repository (LTDA site), `FTHTrading/blockchainfraud` (the worker that serves nil33.com), `FTHTrading/powerpunch-chain` (Power Punch, 3FS, the `pp-chain` contracts, and LTDA's internal planning docs).
