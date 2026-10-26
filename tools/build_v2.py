@@ -85,7 +85,7 @@ class Target:
 
 
 NAV = [("index", "Home"), ("letter", "The letter"), ("collection", "The collection"), ("nil", "NIL"),
-       ("people", "The people"), ("photos", "Photos")]
+       ("youth", "Young athletes"), ("people", "The people"), ("photos", "Photos")]
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" '
          'href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&display=swap">')
 
@@ -211,8 +211,8 @@ def build(t):
 
 <section><div class="wrap">
   <div class="kicker">What we build</div>
-  <h2>Two things. <em>Done right.</em></h2>
-  <div class="tiles two">
+  <h2>Three things. <em>Done right.</em></h2>
+  <div class="tiles three">
     <a class="tile big" href="{U('collection')}">
       <span class="mono tag">RWA · real-world records</span>
       <h3>The collection</h3>
@@ -224,6 +224,12 @@ def build(t):
       <h3>Fair deals for players</h3>
       <p>For college and pro players: endorsement deals at a flat fee, in writing, on a public ledger. No percentage of a player's money. Under 18, nothing happens without a parent's signature.</p>
       <span><span class="state live">Ledger live</span> <span class="state build">ID check in build</span></span>
+    </a>
+    <a class="tile big" href="{U('youth')}">
+      <span class="mono tag">Under 18 · protected</span>
+      <h3>Young athletes</h3>
+      <p>A young player's record belongs to the family. Nothing about a player under 18 is public. A recruiter gets the yes or no they asked for, not the file, and only with a parent's okay.</p>
+      <span><span class="state build">In design</span></span>
     </a>
   </div>
 </div></section>
@@ -332,7 +338,7 @@ def build(t):
 
     # ------------------------------------------------------------ NIL
     page(t, "nil", "NIL · Live the Dream Athletics",
-         "NIL33: flat fee or unpaid, no percentage of a player's money, every countersigned deal on a public ledger, a parent's signature under 18.", """
+         "NIL33: flat fee or unpaid, no percentage of a player's money, every countersigned deal on a public ledger, a parent's signature under 18.", f"""
 <section class="hero small" aria-label="NIL"><div class="wrap">
   <div class="kicker mono">NIL · name, image, likeness</div>
   <h1>Paid in <em>the open.</em></h1>
@@ -355,7 +361,7 @@ def build(t):
     <article><span class="state live">Live</span><h3>Flat fee or unpaid</h3><p>Every deal is a flat fee for a set term, or unpaid and disclosed. Nothing tied to how much a player earns.</p></article>
     <article><span class="state live">Live</span><h3>No percentage, ever</h3><p>No commissions. No revenue share. No cut of a player's money, and nothing tied to recovered funds.</p></article>
     <article><span class="state live">Live</span><h3>Signed, then public</h3><p>An agreement goes on the public ledger once it's countersigned. Anyone can read the ledger, as a page or as data.</p></article>
-    <article><span class="state live">Live</span><h3>A parent's signature</h3><p>Under 18, nothing happens without a parent's signature.</p></article>
+    <article><span class="state live">Live</span><h3>A parent's signature</h3><p>Under 18, nothing happens without a parent's signature. <a href="{U('youth')}">How we protect young athletes</a></p></article>
     <article><span class="state build">In build</span><h3>Know who's real</h3><p>Verification for athletes and the people working with them. The ID step waits on a vendor; it is not live yet.</p></article>
   </div>
 </div></section>
@@ -377,6 +383,57 @@ def build(t):
     <li>The deal and the history sit side by side, both where the player can always find them.</li>
   </ul>
   <p class="mono" style="color:var(--muted);margin-top:18px">Sources: nil33.com rules (read live 2026-10-26); House v. NCAA settlement, approved June 2025.</p>
+</div></section>
+""")
+
+    # ------------------------------------------------------------ YOUNG ATHLETES
+    page(t, "youth", "Young athletes · Live the Dream Athletics",
+         "Protection for players under 18: the family controls the record, nothing is public, and recruiters get only the yes or no they asked for.", f"""
+<section class="hero small" aria-label="Young athletes"><div class="wrap">
+  <div class="kicker mono">Young athletes · under 18</div>
+  <h1>Protected until <em>they're ready.</em></h1>
+  <p class="lede">Showcases, rankings and recruiting pages can put a kid's height, school, hometown and numbers in front of anyone with a browser. Exposure is good. Exposure to everyone isn't. We're building a record the family controls, so a young player's information reaches the right people and nobody else.</p>
+  <div class="btns"><span class="state build">In design: no player data collected yet</span></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="kicker">How it works</div>
+  <h2>Six promises. <em>Built in, not bolted on.</em></h2>
+  <ol class="steps six">
+    <li><b>A parent opens it</b><span>Under 18, nothing exists without a parent's signature. At 18, the record passes to the player.</span></li>
+    <li><b>Nothing is public</b><span>No public profile for any player under 18. Not a name, not a school, not a hometown.</span></li>
+    <li><b>Facts are signed</b><span>The event that timed the sixty signs the time. The coach signs the milestone. Nobody can pad a number.</span></li>
+    <li><b>Answers, not files</b><span>A recruiter asks "Is he 16 or older?" or "Under 7.0 in the sixty?" and gets a signed yes or no. Never the birth date, the transcript or the address.</span></li>
+    <li><b>The parent approves who asks</b><span>Each coach or program gets access for a set time and a set list of questions. The family can take it back at any time.</span></li>
+    <li><b>Every look is logged</b><span>The family sees who asked what, and when. Nobody looks without leaving a mark.</span></li>
+  </ol>
+</div></section>
+
+<section class="why"><div class="wrap">
+  <div class="kicker">Why it matters</div>
+  <blockquote>
+    <p>We know what we went through. Now we look out for the ones coming up, and the youngest ones first. Their information is for the right people, not for everybody.</p>
+    <footer class="mono">Kevan Burns · founder</footer>
+  </blockquote>
+</div></section>
+
+<section class="dark"><div class="wrap">
+  <div class="kicker">Where it fits</div>
+  <div class="tiles three">
+    <a class="tile" href="{U('index')}"><span class="mono tag">Live the Dream</span><h3>Young players</h3><p>The record starts with families in our programs, clinics and gear drives.</p></a>
+    <a class="tile" href="{U('nil')}"><span class="mono tag">NIL33</span><h3>When they're older</h3><p>The same record carries into college and pro NIL, with a parent's signature on anything before 18.</p></a>
+    <div class="tile"><span class="mono tag">For programs</span><h3>Showcases and scouts</h3><p>Built to plug into the platforms that already run showcases and recruiting, as a privacy layer for their under-18 players.</p></div>
+  </div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="kicker">The fine print</div>
+  <ul class="list">
+    <li>This is in design. No player's information is collected until the parent-consent process has been reviewed by counsel for children's privacy and school-records law.</li>
+    <li>Player information stays encrypted and off any blockchain. Only a fingerprint of a signed fact is ever anchored, and it reveals nothing about the player.</li>
+    <li>We never sell or license a young player's information. Not to brands, not to scouts, not to anyone.</li>
+  </ul>
+  <div class="btns" style="margin-top:22px"><a class="btn solid" href="mailto:kevan@unykorn.org?subject=Young%20athletes%20-%20parent%20or%20program">Parents and programs: talk to us</a></div>
 </div></section>
 """)
 
