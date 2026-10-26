@@ -47,7 +47,10 @@
         "https://www.mlb.com/press-release/giants-name-rick-schu-assistant-hitting-coach-261136716",
         "https://www.mlb.com/news/nationals-promote-rick-schu-to-hitting-coach/c-54355284"
       ],
-      "photos": ["16.jpg?", "17.jpg?"],
+      "photos": [
+        "16.jpg?",
+        "17.jpg?"
+      ],
       "yes": null,
       "publish": false,
       "open": "Confirm photos 16-17 (clipboard reads March 2016); who is the man in the Cuba cap in 17"
@@ -63,7 +66,9 @@
         "https://en.wikipedia.org/wiki/Mike_Rizzo",
         "https://baseballamerica.com/?p=37645"
       ],
-      "photos": ["signing photo at grandmother's house (Kevan adding later)"],
+      "photos": [
+        "signing photo at grandmother's house (Kevan adding later)"
+      ],
       "yes": null,
       "publish": false,
       "open": "Kevan's signing year; photo to come"
@@ -80,7 +85,9 @@
         "https://www.chiefmarketer.com/octagon-athletes-acquires-csmgs-baseball-and-masters-units/",
         "https://www.octagon.com/?p=2587"
       ],
-      "photos": ["06.jpg?"],
+      "photos": [
+        "06.jpg?"
+      ],
       "yes": null,
       "publish": false,
       "open": "Confirm photo; Octagon name/marks on a public page need care (no logo, history only)"
@@ -137,7 +144,9 @@
       "public_facts": "",
       "notes": "Panama-born MLB infielder (Atlanta Braves); source to add before use.",
       "fact_sources": [],
-      "photos": ["06.jpg?"],
+      "photos": [
+        "06.jpg?"
+      ],
       "yes": null,
       "publish": false,
       "open": "Relationship; source for public facts; his yes"
@@ -153,24 +162,12 @@
         "https://en.wikipedia.org/wiki/Tarik_El-Abour",
         "https://tsn.ca/royals-sign-autistic-of-el-abour-to-minor-league-contract-1.1056670"
       ],
-      "photos": ["18.jpg?"],
+      "photos": [
+        "18.jpg?"
+      ],
       "yes": null,
       "publish": false,
       "open": "His own yes to how his story and diagnosis are told; confirm photo"
-    },
-    {
-      "id": "byron-embry",
-      "name": "Byron Embry",
-      "group": "Players I played with",
-      "relationship": "Teammate of Kevan's",
-      "relationship_source": "Kevan Burns, chat 2026-10-26",
-      "public_facts": "",
-      "notes": "Not found in a quick search; spelling and team to confirm.",
-      "fact_sources": [],
-      "photos": [],
-      "yes": null,
-      "publish": false,
-      "open": "Spelling, team and year"
     }
   ]
 }

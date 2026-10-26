@@ -1,3 +1,7 @@
+# Collection: v0 and v1 SUPERSEDED by v2 (none sent)
+
+> 2026-10-26, later still: Kevan reframed LTDA-001 ("that's my son ... the legacy of playing ball and passing it on to your kids"). Built **v2**, root `0xe6b59b85226808846b979fbc46e7596e3781772d6badece06f60c58fa6c6afb5` (`data/collection/v2/manifest.json`). v1 kept unchanged and must not be anchored. Same pre-anchor list applies to v2.
+
 # Collection v0: SUPERSEDED by v1 (never sent)
 
 > 2026-10-26, later the same day: Kevan gave the stories (his son below the bat; Troy Hall of Fame induction jerseys; Falcons uniform with his grandmother; himself at the plate and as a kid). Built as **v1**, root `0xd68fa09151d9126cc3743805ffee8f28161c20300a93b433ce225e9dbecd67f7` (`data/collection/v1/manifest.json`). v0 is kept unchanged for the record and must not be anchored. Before anchoring v1: era/induction year, where each original is kept, a source for the Troy Hall of Fame line on any public page, and a yes for the photo of Kevan's son and of his grandmother.

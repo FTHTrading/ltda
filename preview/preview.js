@@ -3,6 +3,11 @@
 (function () {
   var M = "/preview/media/";
   var page = document.body.getAttribute("data-page");
+  var menu = document.getElementById("menu"), nav = document.getElementById("nav");
+  if (menu && nav) menu.addEventListener("click", function () {
+    nav.classList.toggle("open");
+    menu.setAttribute("aria-expanded", nav.classList.contains("open"));
+  });
   var pad = function (n) { return String(n).padStart(2, "0"); };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]; }); };
   var safeUrl = function (u) { try { var x = new URL(u, location.href); return /^https?:$/.test(x.protocol) ? x.href : null; } catch (e) { return null; } };
@@ -61,8 +66,8 @@
 
   var records = document.getElementById("records");
   if (records) Promise.all([
-    fetch("/data/collection/records.src.json").then(function (r) { return r.json(); }),
-    fetch(M + "hashes.json").then(function (r) { return r.json(); })
+    fetch("/data/collection/records.src.json", { cache: "no-store" }).then(function (r) { return r.json(); }),
+    fetch(M + "hashes.json", { cache: "no-store" }).then(function (r) { return r.json(); })
   ]).then(function (res) {
     var H = res[1];
     res[0].records.forEach(function (c) {
@@ -78,7 +83,7 @@
   });
 
   var people = document.getElementById("people");
-  if (people) fetch("/data/people.json").then(function (r) { return r.json(); }).then(function (data) {
+  if (people) fetch("/data/people.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (data) {
     var limit = Number(people.getAttribute("data-limit")) || data.people.length;
     data.people.slice(0, limit).forEach(function (p) {
       var srcs = (p.fact_sources || []).map(safeUrl).filter(Boolean).map(function (u, i) { return '<a class="chip src" href="' + esc(u) + '" target="_blank" rel="noopener">source ' + (i + 1) + "</a>"; }).join("");
