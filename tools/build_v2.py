@@ -15,7 +15,7 @@ how he knows them (relationship not "to come").
 import html, json, os, shutil, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V = "17"
+V = "18"
 SITE_PHOTOS = {
     "rod-carew-hillside", "panama-rod-carew-rail", "coach-cage", "dugout",   # already on the live site
     "b01",                                                                   # Kevan's own portrait
@@ -133,9 +133,11 @@ def page(t, name, title, desc, body, og_image="rod-carew-hillside"):
 """)
 
 
-def pic(t, stem, alt, cls="pic"):
+def pic(t, stem, alt, cls="pic", single=False):
     if not t.ok(stem):
         return f'<div class="{cls} pending"><span class="mono">Photo coming<br>once everyone in it says yes</span></div>'
+    if single:  # one image, original colour, no hover layer
+        return f'<div class="{cls}"><img src="{t.media}{e(stem)}.orig.jpg" alt="{e(alt)}"></div>'
     return (f'<div class="{cls}"><img src="{t.media}{e(stem)}.duo.jpg" alt="{e(alt)}" loading="lazy">'
             f'<img class="orig" src="{t.media}{e(stem)}.orig.jpg" alt="" loading="lazy"></div>')
 
@@ -259,7 +261,7 @@ def build(t):
          "Drafted in the 26th round, signed at his grandmother's house: why Kevan Burns is still in the game.", f"""
 <section id="letter"><div class="wrap letter">
   <figure>
-    {pic(t, "b01", "Kevan Burns, black and white portrait")}
+    {pic(t, "b01", "Kevan Burns, black and white portrait", single=True)}
     <figcaption class="mono">Kevan Burns · founder</figcaption>
   </figure>
   <div class="body">
