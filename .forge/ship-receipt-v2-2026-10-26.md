@@ -1,6 +1,18 @@
-# Ship receipt: LTDA v2 to production (WAITING FOR KEVAN'S GO)
+# Ship receipt: LTDA v2 to production (DEPLOYED 2026-10-26)
 
-FORGE Phase 6. Nothing below has been sent to production.
+**Deployed** 2026-10-26 ~17:56Z on Kevan's instruction in chat ("add the Live the Dream to the website that we actually
+have up so that when I get to the office, it has everything connected"). `main` fast-forwarded locally to `99db6b9`
+(not pushed: the GitHub repo is public and the branch carries internal .forge files). Worker `ltda-site` version
+`03c8d909-a68f-4ce1-bbd6-ab0f7ad0791d`; previous live version `10c09850-2cf7-4002-b840-74610de82a60` (2026-09-17)
+is the rollback (`npx wrangler@4 rollback 10c09850-2cf7-4002-b840-74610de82a60`).
+
+**Served check (livethedreamathletics.com, 2026-10-26 ~17:57Z):** /, /letter/, /collection/, /nil/, /youth/, /people/,
+/photos/, /history/, /proof/, /fund/, /v2/preview.css, /v2/preview.js, two media files and /api/health all 200; home
+serves v2 (hero, "Three things", NIL33 band); no preview banner; 0 references to uncleared photos; 0 "zero-knowledge".
+Known: www.livethedreamathletics.com serves the site directly (200) instead of 301 to the apex; static assets answer
+before the worker's redirect runs. Pre-existing config, not changed here.
+
+FORGE Phase 6. Original pre-deploy receipt below.
 
 | | |
 |---|---|
