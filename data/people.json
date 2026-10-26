@@ -1,0 +1,176 @@
+{
+  "_rules": "A person appears on the public site only when publish=true. publish=true needs: relationship confirmed by Kevan, public facts sourced, and the person's own yes recorded in 'yes' (who, date, how). Photos need the same yes from everyone identifiable in them, and a parent's written yes for anyone under 18 in the frame. Role lines state history, never endorsement.",
+  "people": [
+    {
+      "id": "john-mayotte",
+      "name": "John Mayotte",
+      "group": "Coaches who shaped me",
+      "relationship": "Kevan's college coach at Troy. Years later, when Kevan was director of baseball at Montverde Academy, he hired Coach Mayotte as head coach for the season; he and his wife lived on campus.",
+      "relationship_source": "Kevan Burns, chat 2026-10-26",
+      "notes": "Kevan gave his wife's first name in chat (2026-10-26); use it on the page only with her yes.",
+      "public_facts": "Troy head coach 1991-2002; led Troy to the 1993 NCAA Division II College World Series; 386 wins at Troy. Died January 2022.",
+      "fact_sources": [
+        "https://troytrojans.com/news/2022/1/18/troy-athletics-mourns-the-loss-of-former-baseball-head-coach-john-mayotte",
+        "https://www.baseball-reference.com/bullpen/John_Mayotte"
+      ],
+      "in_memory": true,
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "Kevan's years at Troy; family's yes for an in-memory mention"
+    },
+    {
+      "id": "cam-walker",
+      "name": "Cam Walker",
+      "group": "Coaches who shaped me",
+      "relationship": "Kevan's college coach at Indian Hills Community College. He came to Montverde Academy for Scout Day, so both of Kevan's college coaches helped run the camp.",
+      "relationship_source": "Kevan Burns, chat 2026-10-26",
+      "public_facts": "Indian Hills head coach 1993-2018; NJCAA Baseball Coaches Association Hall of Fame (2012).",
+      "fact_sources": [
+        "https://www.baseball-reference.com/bullpen/Indian_Hills_Community_College",
+        "https://jucogj.org/hof.aspx?hof=97"
+      ],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "Kevan's years at Indian Hills; which photo, if any"
+    },
+    {
+      "id": "rick-schu",
+      "name": "Rick Schu",
+      "group": "The game's inside",
+      "relationship": "Kevan's hitting coach in the Arizona Diamondbacks system; 'the best hitting coach I ever had.' Kevan visited him at Nationals spring training (and brought a case of Budweiser).",
+      "relationship_source": "Kevan Burns, chat 2026-10-26",
+      "public_facts": "Coached with four Diamondbacks affiliates 1998-2001, then Arizona's minor league hitting coordinator and later its major league hitting coach; Washington Nationals hitting coach 2013-2017.",
+      "fact_sources": [
+        "https://www.baseball-reference.com/bullpen/Rick_Schu",
+        "https://www.mlb.com/press-release/giants-name-rick-schu-assistant-hitting-coach-261136716",
+        "https://www.mlb.com/news/nationals-promote-rick-schu-to-hitting-coach/c-54355284"
+      ],
+      "photos": ["16.jpg?", "17.jpg?"],
+      "yes": null,
+      "publish": false,
+      "open": "Confirm photos 16-17 (clipboard reads March 2016); who is the man in the Cuba cap in 17"
+    },
+    {
+      "id": "mike-rizzo",
+      "name": "Mike Rizzo",
+      "group": "The game's inside",
+      "relationship": "Came to Kevan's grandmother's house and signed him for the Arizona Diamondbacks",
+      "relationship_source": "Kevan Burns, chat 2026-10-26 (final: 'Mike Rizzo signed me. Drop Mac Seibert.')",
+      "public_facts": "Arizona Diamondbacks scout from 1998, then scouting director; Washington Nationals assistant GM 2007-2008 and general manager from 2009.",
+      "fact_sources": [
+        "https://en.wikipedia.org/wiki/Mike_Rizzo",
+        "https://baseballamerica.com/?p=37645"
+      ],
+      "photos": ["signing photo at grandmother's house (Kevan adding later)"],
+      "yes": null,
+      "publish": false,
+      "open": "Kevan's signing year; photo to come"
+    },
+    {
+      "id": "alan-nero",
+      "name": "Alan Nero",
+      "group": "The game's inside",
+      "relationship": "Kevan's mentor; hired Kevan at Octagon, where Kevan worked for him in the baseball division",
+      "relationship_source": "Kevan Burns, chat 2026-10-26; Octagon HR newsletter (intake 13.jpg) lists Kevan Burns, Division: Baseball",
+      "public_facts": "Longtime baseball agent; founded CSMG, whose baseball unit joined Octagon; co-leads Octagon Baseball.",
+      "notes": "Not usable: 'the first major league baseball agent in history' (no source; agents represented players long before).",
+      "fact_sources": [
+        "https://www.chiefmarketer.com/octagon-athletes-acquires-csmgs-baseball-and-masters-units/",
+        "https://www.octagon.com/?p=2587"
+      ],
+      "photos": ["06.jpg?"],
+      "yes": null,
+      "publish": false,
+      "open": "Confirm photo; Octagon name/marks on a public page need care (no logo, history only)"
+    },
+    {
+      "id": "hank-sargent",
+      "name": "Hank Sargent",
+      "group": "The game's inside",
+      "relationship": "How we know him: to come.",
+      "relationship_source": "Kevan Burns, chat 2026-10-26 (named, relationship not yet given)",
+      "public_facts": "Florida Southern assistant coach 1986-1991; scouted for the Montreal Expos and Cincinnati Reds; Angels crosschecker; player agent.",
+      "fact_sources": [
+        "https://www.baseball-reference.com/bullpen/Hank_Sargent"
+      ],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "Relationship in one line; Baseball-Reference entry is thinly sourced, confirm dates with him"
+    },
+    {
+      "id": "noro-padron",
+      "name": "Noro Padron",
+      "group": "Players and friends",
+      "relationship": "How we know him: to come.",
+      "relationship_source": "Kevan Burns, chat 2026-10-26 (named, relationship not yet given)",
+      "public_facts": "",
+      "notes": "Spelling to confirm (Padrón?). Not the same as the 'oro-padron' counterparty folder in war-room/outbox unless Kevan says so.",
+      "fact_sources": [],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "Who he is, spelling, photo"
+    },
+    {
+      "id": "the-gringo",
+      "name": "The Gringo",
+      "group": "Players and friends",
+      "relationship": "How we know him: to come.",
+      "relationship_source": "Kevan Burns, chat 2026-10-26 (nickname only)",
+      "public_facts": "",
+      "notes": "Nickname; real name and whether he wants it used on the page to come.",
+      "fact_sources": [],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "Real name, story, his yes to the nickname"
+    },
+    {
+      "id": "johan-camargo",
+      "name": "Johan Camargo",
+      "group": "Players",
+      "relationship": "How we know him: to come.",
+      "relationship_source": "Kevan Burns, chat 2026-10-26",
+      "public_facts": "",
+      "notes": "Panama-born MLB infielder (Atlanta Braves); source to add before use.",
+      "fact_sources": [],
+      "photos": ["06.jpg?"],
+      "yes": null,
+      "publish": false,
+      "open": "Relationship; source for public facts; his yes"
+    },
+    {
+      "id": "tarik-el-abour",
+      "name": "Tarik El-Abour",
+      "group": "Players",
+      "relationship": "Player Kevan represented",
+      "relationship_source": "Kevan Burns, chat 2026-10-26",
+      "public_facts": "Signed a minor league contract with the Kansas City Royals on April 13, 2018; widely reported as the first professional baseball player with autism.",
+      "fact_sources": [
+        "https://en.wikipedia.org/wiki/Tarik_El-Abour",
+        "https://tsn.ca/royals-sign-autistic-of-el-abour-to-minor-league-contract-1.1056670"
+      ],
+      "photos": ["18.jpg?"],
+      "yes": null,
+      "publish": false,
+      "open": "His own yes to how his story and diagnosis are told; confirm photo"
+    },
+    {
+      "id": "byron-embry",
+      "name": "Byron Embry",
+      "group": "Players I played with",
+      "relationship": "Teammate of Kevan's",
+      "relationship_source": "Kevan Burns, chat 2026-10-26",
+      "public_facts": "",
+      "notes": "Not found in a quick search; spelling and team to confirm.",
+      "fact_sources": [],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "Spelling, team and year"
+    }
+  ]
+}

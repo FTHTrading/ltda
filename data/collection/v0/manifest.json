@@ -1,0 +1,90 @@
+{
+  "name": "Live the Dream Athletics collection (real-world archive)",
+  "version": "v0",
+  "built": "2026-10-26T16:29:34.137Z",
+  "publisher": "UnyKorn LLC (Wyoming) for Live the Dream Athletics",
+  "leaf": "keccak256(sha256(record file))",
+  "tree": "sorted-pair keccak256",
+  "merkleRoot": "0xa5c4fdc18f77234ce912ade4fd0c6acb9c29db909a72d6fade4e732e3d91ad40",
+  "count": 6,
+  "anchor": {
+    "chain": "base",
+    "chainId": 8453,
+    "contract": "0xCf1660AD2f6D0DD2E14924Fe96cDFC5199D6f052",
+    "method": "anchorHistory(bytes32 root, string uri)",
+    "uri": "https://livethedreamathletics.com/collection/v0/manifest.json",
+    "status": "PENDING_OWNER_TX"
+  },
+  "items": [
+    {
+      "id": "LTDA-001",
+      "title": "Game bat",
+      "path": "records/LTDA-001.json",
+      "bytes": 502,
+      "sha256": "0x30b7e99d66b8a416017bfbb25828c594330e2fa5670bdfd5a35f7ffc1cc774de",
+      "proof": [
+        "0xa87de40946c18dd892aff61cbf9466e4a875bcd9fb76c2fe89237f62c5b1c863",
+        "0xee55c59749a1324ca46670021bc36f952296d923aaea41368cd495fafc431c60"
+      ]
+    },
+    {
+      "id": "LTDA-002",
+      "title": "Framed jerseys",
+      "path": "records/LTDA-002.json",
+      "bytes": 521,
+      "sha256": "0xea50e36f53ae914ee9459421168f3cfd4dd449c72f20ebe0168ffeea9043bb9e",
+      "proof": [
+        "0x6e1dc4f6720df2e95176002cf41d54c780dd72087946e25f7cd354bd247fbc7a",
+        "0xb3ff301786fce23ca82f6898c83b70861fd8414a5a0128142ae2323c54024bb5",
+        "0x5605546f62030f2ed1c46a5c23901080d3a96a05078646f040802f786cec26e6"
+      ]
+    },
+    {
+      "id": "LTDA-003",
+      "title": "Scrapbook page",
+      "path": "records/LTDA-003.json",
+      "bytes": 539,
+      "sha256": "0x104dee2c617d4fff41e2c381ff43e1510d0983432ccd32e176854e7674d082b0",
+      "proof": [
+        "0x32b69dfce2367d1271f1e51ed40c1ccfe1ee3612c06814ed2386ea6c3b5b2738",
+        "0x48f32a8b0f9beec21a797ba7140551658068ff3cf19427f96908bdb6521b2ecf",
+        "0x5605546f62030f2ed1c46a5c23901080d3a96a05078646f040802f786cec26e6"
+      ]
+    },
+    {
+      "id": "LTDA-004",
+      "title": "Scrapbook page",
+      "path": "records/LTDA-004.json",
+      "bytes": 517,
+      "sha256": "0x80def110b325588a6c3c0cfcbee5a967ae959cc42ae51c8fc2b938913714d386",
+      "proof": [
+        "0xcac3fca99394b957c43e49029a440a2c2f1098a3ec70b099c11a6ffbbaedf7ad",
+        "0xee55c59749a1324ca46670021bc36f952296d923aaea41368cd495fafc431c60"
+      ]
+    },
+    {
+      "id": "LTDA-005",
+      "title": "Falcons uniform",
+      "path": "records/LTDA-005.json",
+      "bytes": 529,
+      "sha256": "0xdc712e1e89aefbee037568e56c38d0c2541ce281439c99cc7c59b8679d3b32f3",
+      "proof": [
+        "0x14f4967c63f475da76f3aa1c6ab865459fbfffeb95cade6eb0d8ecbbc52937a6",
+        "0x48f32a8b0f9beec21a797ba7140551658068ff3cf19427f96908bdb6521b2ecf",
+        "0x5605546f62030f2ed1c46a5c23901080d3a96a05078646f040802f786cec26e6"
+      ]
+    },
+    {
+      "id": "LTDA-006",
+      "title": "At the plate",
+      "path": "records/LTDA-006.json",
+      "bytes": 513,
+      "sha256": "0xbd037bd6a2fd8a2e21e1e732ab3d0a127230c36906796e7027003ef8ffc79b94",
+      "proof": [
+        "0xa06921e4e2ed3c881b34cc5aca5d37c8471c862d82474d7d3d6b9577a54891da",
+        "0xb3ff301786fce23ca82f6898c83b70861fd8414a5a0128142ae2323c54024bb5",
+        "0x5605546f62030f2ed1c46a5c23901080d3a96a05078646f040802f786cec26e6"
+      ]
+    }
+  ]
+}
