@@ -100,6 +100,14 @@
       "file": "Troy_SBC_Notes.pdf",
       "sha256": "0a97c2591f8eb91a2fd38b28a4a1fd36bbf6965733d2b2a6a423b24eb3e08107",
       "bytes": 3045652
+    },
+    "bref_seibert": {
+      "name": "Baseball-Reference Bullpen: Mac Seibert",
+      "url": "https://www.baseball-reference.com/bullpen/Mac_Seibert"
+    },
+    "bref_juco98": {
+      "name": "Baseball-Reference Bullpen: 1998 NJCAA Division I World Series",
+      "url": "https://www.baseball-reference.com/bullpen/1998_NJCAA_Division_I_Baseball_World_Series"
     }
   },
   "entries": [
@@ -302,6 +310,26 @@
       "status": "VERIFIED",
       "checked": "2026-11-08",
       "note": "WyoBiz is a search form; screenshot the result for the file."
+    },
+    {
+      "year": "1998",
+      "era": "player",
+      "text": "Indian Hills reached the NJCAA Division I World Series in Grand Junction, Colorado, and was eliminated by San Jacinto on May 30.",
+      "sources": [
+        "bref_juco98"
+      ],
+      "status": "PENDING",
+      "note": "Read from search results 2026-11-08; open the Bullpen page to confirm before publishing. Kevan: third place, lost the tiebreak on a coin flip (not yet sourced)."
+    },
+    {
+      "year": "1999",
+      "era": "player",
+      "text": "Drafted by the Arizona Diamondbacks out of Troy; Kevan names scout Mac Seibert as who drafted him and Mike Rizzo as who signed him.",
+      "sources": [
+        "bref_seibert"
+      ],
+      "status": "PENDING",
+      "note": "Kevan 2026-10-26: 'Mike Rizzo signed me.' Kevan 2026-11-08: 'Mac Seibert is who drafted me.' Confirm the split; Bullpen confirms Seibert scouted for Arizona (no dates)."
     }
   ],
   "not_true": [

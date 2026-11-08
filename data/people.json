@@ -71,7 +71,8 @@
       ],
       "yes": null,
       "publish": false,
-      "open": "Kevan's signing year; photo to come"
+      "open": "Kevan's signing year; photo to come",
+      "notes": "2026-11-08: Kevan said \"Mac Seibert is who drafted me.\" Likely Seibert drafted/scouted and Rizzo signed; confirm with Kevan."
     },
     {
       "id": "alan-nero",
@@ -110,9 +111,9 @@
     {
       "id": "noro-padron",
       "name": "Noro Padron",
-      "group": "Players and friends",
-      "relationship": "How we know him: to come.",
-      "relationship_source": "Kevan Burns, chat 2026-10-26 (named, relationship not yet given)",
+      "group": "Players",
+      "relationship": "One of our players.",
+      "relationship_source": "Kevan Burns, chat 2026-11-08",
       "public_facts": "",
       "notes": "Spelling to confirm (Padrón?). Not the same as the 'oro-padron' counterparty folder in war-room/outbox unless Kevan says so.",
       "fact_sources": [],
@@ -123,12 +124,12 @@
     },
     {
       "id": "the-gringo",
-      "name": "The Gringo",
-      "group": "Players and friends",
-      "relationship": "How we know him: to come.",
-      "relationship_source": "Kevan Burns, chat 2026-10-26 (nickname only)",
+      "name": "Tom Justice, \"the Gringo\"",
+      "group": "Players",
+      "relationship": "One of our players, Panama.",
+      "relationship_source": "Kevan Burns, chat 2026-11-08",
       "public_facts": "",
-      "notes": "Nickname; real name and whether he wants it used on the page to come.",
+      "notes": "Nickname the Gringo; real name Tom Justice (Kevan 2026-11-08).",
       "fact_sources": [],
       "photos": [],
       "yes": null,
@@ -152,22 +153,65 @@
       "open": "Relationship; source for public facts; his yes"
     },
     {
-      "id": "tarik-el-abour",
-      "name": "Tarik El-Abour",
+      "id": "kyle-murphy",
       "group": "Players",
-      "relationship": "Player Kevan represented",
-      "relationship_source": "Kevan Burns, chat 2026-10-26",
-      "public_facts": "Signed a minor league contract with the Kansas City Royals on April 13, 2018; widely reported as the first professional baseball player with autism.",
+      "relationship_source": "Kevan Burns, chat 2026-11-08",
+      "public_facts": "Drafted by the Texas Rangers in the 19th round, 2007 (Beloit Daily News, June 10, 2007).",
+      "notes": "",
       "fact_sources": [
-        "https://en.wikipedia.org/wiki/Tarik_El-Abour",
-        "https://tsn.ca/royals-sign-autistic-of-el-abour-to-minor-league-contract-1.1056670"
+        "https://www.beloitdailynews.com/uncategorized/murphy-will-get-his-shot-at-pro-ball/article_d31b881b-210e-594f-ada3-91769a38e202.html"
       ],
-      "photos": [
-        "18.jpg?"
-      ],
+      "photos": [],
       "yes": null,
       "publish": false,
-      "open": "His own yes to how his story and diagnosis are told; confirm photo"
+      "open": "His own yes to being named",
+      "name": "Kyle Murphy",
+      "relationship": "One of our players. He worked on his swing with Kevan in Beloit before the Texas Rangers drafted him."
+    },
+    {
+      "id": "wyatt-olsen",
+      "group": "Players",
+      "relationship_source": "Kevan Burns, chat 2026-11-08",
+      "public_facts": "",
+      "notes": "A hall plaque photo is in media (wyatt-olsen-hall-plaque.jpg); Kevan to give the story and the hall name.",
+      "fact_sources": [],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "His own yes to being named",
+      "name": "Wyatt Olsen",
+      "relationship": "One of our players."
+    },
+    {
+      "id": "pj-connelly",
+      "group": "Players",
+      "relationship_source": "Kevan Burns, chat 2026-11-08",
+      "public_facts": "Pitched for the Winnipeg Goldeyes in 2005, then in the Angels system (StatsCrew).",
+      "notes": "Sitting mayor of Greenville, NC: teammate context only, never an endorsement; his own yes before naming. Kevan contacts him personally.",
+      "fact_sources": [
+        "https://statscrew.com/minorbaseball/stats/p-9a340e55",
+        "https://www.baseball-reference.com/register/player.fcgi?id=burns-001kev"
+      ],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "His own yes to being named",
+      "name": "P.J. Connelly",
+      "relationship": "Kevan's teammate on the 2005 Winnipeg Goldeyes. Both are from Beloit."
+    },
+    {
+      "id": "jesus",
+      "group": "Players",
+      "relationship_source": "Kevan Burns, chat 2026-11-08",
+      "public_facts": "",
+      "notes": "Last name to come.",
+      "fact_sources": [],
+      "photos": [],
+      "yes": null,
+      "publish": false,
+      "open": "His own yes to being named",
+      "name": "Jesus",
+      "relationship": "One of our players."
     }
   ]
 }
