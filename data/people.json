@@ -112,10 +112,10 @@
       "id": "noro-padron",
       "name": "Noro Padron",
       "group": "Players",
-      "relationship": "One of our players.",
+      "relationship": "One of our players, from Cuba.",
       "relationship_source": "Kevan Burns, chat 2026-11-08",
       "public_facts": "",
-      "notes": "Spelling to confirm (Padrón?). Not the same as the 'oro-padron' counterparty folder in war-room/outbox unless Kevan says so.",
+      "notes": "Private story held outside the repo (reputation-tools record.json, people_private). Needs his written yes before anything beyond this line.",
       "fact_sources": [],
       "photos": [],
       "yes": null,
@@ -125,8 +125,8 @@
     {
       "id": "the-gringo",
       "name": "Tom Justice, \"the Gringo\"",
-      "group": "Players",
-      "relationship": "One of our players, Panama.",
+      "group": "Coaches who shaped me",
+      "relationship": "Our coach in Panama, known there as the Gringo.",
       "relationship_source": "Kevan Burns, chat 2026-11-08",
       "public_facts": "",
       "notes": "Nickname the Gringo; real name Tom Justice (Kevan 2026-11-08).",
@@ -173,14 +173,14 @@
       "group": "Players",
       "relationship_source": "Kevan Burns, chat 2026-11-08",
       "public_facts": "",
-      "notes": "A hall plaque photo is in media (wyatt-olsen-hall-plaque.jpg); Kevan to give the story and the hall name.",
+      "notes": "Kevan's sentence ended \"and helped find...\" (cut off): ask what. Eric Olsen named here as Wyatt's father; his yes too before publish.",
       "fact_sources": [],
       "photos": [],
       "yes": null,
       "publish": false,
       "open": "His own yes to being named",
       "name": "Wyatt Olsen",
-      "relationship": "One of our players."
+      "relationship": "One of our players. His father, Eric Olsen, brought Kevan back to baseball when Kevan moved home to Beloit, Wisconsin."
     },
     {
       "id": "pj-connelly",
@@ -200,18 +200,18 @@
       "relationship": "Kevan's teammate on the 2005 Winnipeg Goldeyes. Both are from Beloit."
     },
     {
-      "id": "jesus",
+      "id": "jesus-hernandez",
       "group": "Players",
       "relationship_source": "Kevan Burns, chat 2026-11-08",
       "public_facts": "",
-      "notes": "Last name to come.",
+      "notes": "Private story held outside the repo (reputation-tools record.json, people_private). Needs his written yes before anything beyond this line.",
       "fact_sources": [],
       "photos": [],
       "yes": null,
       "publish": false,
       "open": "His own yes to being named",
-      "name": "Jesus",
-      "relationship": "One of our players."
+      "name": "Jesus Hernandez",
+      "relationship": "One of our players, from Cuba."
     }
   ]
 }
