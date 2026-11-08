@@ -27,9 +27,12 @@ HUB = REC["person"]["hub"]
 PERSON_ID = REC["person"]["id"]
 ORG_ID = "https://livethedreamathletics.com/#org"
 UNY_ID = "https://unykorn.ai/#org"
-V3_PHOTOS = {"kb1-bat", "panama-stadium", "troy-hof-2007"}  # Tier A only
+V3_PHOTOS = {"kb1-bat", "panama-stadium", "troy-hof-2007",  # Tier A
+             # Tier B, adults in baseball settings: published on Kevan's instruction 2026-11-08 (.forge/founder-flags.md)
+             "aces-1996", "at-bat", "on-the-field", "clubhouse", "spring-training", "glove-drive", "shoe-day",
+             "camp-talk", "camp-coaching", "teammates"}
 
-NAV = [("index", "Home"), ("story", "Our story"), ("youth", "Young athletes"), ("athletes", "Athletes · NIL"),
+NAV = [("index", "Home"), ("story", "The road"), ("youth", "Young athletes"), ("athletes", "Athletes · NIL"),
        ("sponsors", "Sponsors"), ("collection", "The collection"), ("people", "The people")]
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800'
@@ -58,7 +61,9 @@ def img(t, stem, alt, cls=""):
     return f'<figure class="ph {cls}"><img src="/media/v3/{e(stem)}.jpg" alt="{e(alt)}" width="{w}" height="{h}" loading="lazy"></figure>'
 
 
-PHOTO_SIZE = {"kb1-bat": (960, 485), "panama-stadium": (1600, 1200), "troy-hof-2007": (604, 267)}
+from PIL import Image as _Im
+_MEDIA = os.path.join(ROOT, "public", "media", "v3")
+PHOTO_SIZE = {os.path.splitext(f)[0]: _Im.open(os.path.join(_MEDIA, f)).size for f in os.listdir(_MEDIA) if f.endswith(".jpg")}
 LABEL = {"tan2": "Player diary, pt 2", "tan7": "Player diary, pt 7", "tan8": "Player diary, pt 8", "sabr": "SABR journal",
          "kreyche": "SABR talk (video)", "bdn_2007": "Beloit Daily News", "troy_hof": "Troy media guide, p. 74",
          "troy_notes": "Troy game notes", "ihcc_aa": "IHCC All-Americans", "ihcc_rb": "IHCC record book",
@@ -109,6 +114,7 @@ def page(t, name, title, desc, body, og_image="rod-carew-hillside"):
   <span>Founded by <a href="{HUB}">Kevan Burns</a>. Live the Dream Athletics and <a href="https://nil33.com">NIL33</a> are programs of <a href="https://unykorn.ai">UnyKorn LLC</a> (Wyoming). Gifts, not investments: nothing here is for sale, and no record carries a share of anything.</span>
 </div></footer>
 <script src="/v2/preview.js?v={v2.V}"></script>
+<script src="/v3/site.js?v={V3}" defer></script>
 </body>
 </html>
 """)
@@ -212,19 +218,107 @@ def home(t):
 """, og_image="v3/panama-stadium")
 
 
+VIDEOS = [
+    ("HeO5W1-Q0uI", "24-Hour for Africa Baseball in Tucson", "Cathy Kreyche, SABR Women in Baseball Conference, 2024. The Live the Dream camp comes up around the ten-minute mark."),
+    ("fimBAgZY2W0", "We Care Panhandle", "After Hurricane Michael, Florida Panhandle, 2018."),
+    ("JoyGZkk4cpE", "Power Punch baseball", "The original Power Punch series."),
+    ("uefRdrX_nFg", "Live The Dream Athletics", "From the early Live the Dream channel."),
+]
+
+CHAPTERS = [
+    # (where, title, text [sourced], quote, source keys, words [Kevan's own account], photos [(stem, caption)])
+    ("Beloit, Wisconsin", "Where it starts",
+     "A left-handed outfielder at Beloit Memorial High School. The summer after, playing in the Wisconsin State League against grown men, he was named Rookie of the Year with the Janesville Aces.",
+     None, ["bdn_2007", "wsl"],
+     "That Aces team was a family: Klawitter and Queeny on the mound, Hawk at third, Campy catching, Hallada at short, Darrel Purdue, Schmitty in right, Coolie. And Houck, who threw me extra BP whenever I asked.",
+     [("aces-1996", "Janesville, 1996. The print is dated 9/6/96.")]),
+    ("Centerville, Iowa", "Indian Hills",
+     "Two years of junior college ball at Indian Hills. In 1998 he hit 19 home runs, still tied for the school's single-season top five, and was named an NJCAA Second Team All-American.",
+     None, ["ihcc_aa", "ihcc_rb"],
+     "Cam Walker ran the program, Kevin Benzing taught me to hit, Whit ran the bench. In 1998 the whole team went to the JUCO World Series in Grand Junction and finished third. We lost the tiebreak on a flip.",
+     [("teammates", "Teammates, behind the cage.")]),
+    ("Winchester, Virginia", "Summer ball, 1998",
+     "", None, [],
+     "Summer of 1998 I played for the Winchester Royals in the Valley League. They called me the fastest man in the Valley.",
+     []),
+    ("Troy, Alabama", "One season, a long memory",
+     "One season in center field for Troy State, a Division I program, for coach John Mayotte. He scored 71 runs, fifth-most in a season in the school's history. In 2007, Troy put him in its Baseball Hall of Fame, in the same class as Coach Mayotte.",
+     None, ["uf_box", "troy_notes", "troy_hof"], "",
+     [("troy-hof-2007", "Troy Baseball Hall of Fame, Class of 2007. The podium sign lists Kevan Burns, OF, 1999.")]),
+    ("Missoula to Winnipeg", "Pro ball, 1999 to 2005",
+     "Drafted by the Arizona Diamondbacks in the 26th round. He hit .330 his first pro summer, .361 at High-A Lancaster in 2001, then reached Double-A with El Paso and, with the Cardinals, Tennessee. Independent ball followed at Nashua and Winnipeg. Seven seasons, 528 games, a .306 average.",
+     None, ["bref"],
+     "Mac Seibert scouted me. Mike Rizzo came to my grandmother's house and signed me. Rick Schu was the best hitting coach I ever had. In 2005 I came out of retirement to play for Winnipeg, with P.J. Connelly, another Beloit kid, on the staff.",
+     [("at-bat", "At the plate."), ("on-the-field", "On the field, before a game."), ("clubhouse", "In the clubhouse.")]),
+    ("A cheap motel and an idea", "The Power Punch",
+     "In 2001, still a minor leaguer, he filed a patent on a batting aid. It was granted in 2003. Years later it reached the shelf at Dick's Sporting Goods under the Markwort label.",
+     ("while in the minors, while broke and eating pb&j", "Kevan Burns, in Octagon's employee newsletter"), ["patent", "dicks", "octagon"],
+     "", [("kb1-bat", "KB1, the Rideau Crusher.")]),
+    ("2001", "Live the Dream Athletics",
+     "The same year, he started Live the Dream: gloves for kids who didn't have one, clinics from Beloit to Panama, phone calls to college coaches for players nobody was calling about.",
+     None, ["ltda"],
+     "When I moved back to Beloit, Eric Olsen, Wyatt's dad, brought me back to the game.",
+     [("glove-drive", "Donated gloves, laid out for a clinic."), ("shoe-day", "Shoe day.")]),
+    ("Tucson, 2003", "Twenty-four hours for Africa",
+     "Seventy-two women came to Tucson Electric Park to play one game for twenty-four straight hours, raising money for US Doctors for Africa. Live the Dream ran the two-day pro camp before it, and its coaches worked the game through the night. SABR lists the 127-110 final as the record for a planned marathon game.",
+     ("Kevan Burns was coaching first at that point.", "Cecilia Tan, player's diary, 4 a.m."), ["tan2", "tan7", "tan8", "sabr", "kreyche"],
+     "", [("camp-talk", "Camp, the talk before drills."), ("camp-coaching", "Camp, one on one.")]),
+    ("Beloit, 2007", "A swing turned around",
+     "A local player had hit .153 and nearly walked away from the game. Home in Beloit, he worked on his swing with Kevan. The next spring he raised his average 178 points, and the Texas Rangers drafted him.",
+     ("He was vital to my turning it around.", "Kyle Murphy, to the Beloit Daily News"), ["bdn_2007"], "", []),
+    ("Inside the game", "Agent, director, mentor",
+     "", None, ["octagon"],
+     "Alan Nero was my mentor. He hired me at Octagon, and I worked for him in the baseball division as an MLB agent. Later, as director of baseball at Montverde Academy, I hired Coach Mayotte as our head coach, and Cam Walker came down for Scout Day. Both of my college coaches, on one field.",
+     [("spring-training", "Spring training, visiting an old coach.")]),
+    ("Panama and Cuba", "Bridges",
+     "Gear carried to fields that didn't have enough of it. Clinics at Rod Carew Stadium and the fields around it. Players helped toward a shot most people never hear about.",
+     None, ["ltda"],
+     "Tom Justice, the Gringo, coached with us in Panama. Jesus Hernandez and Noro Padron came to us from Cuba.",
+     [("panama-stadium", "Rod Carew Stadium, Panama.")]),
+    ("Florida Panhandle, 2018", "After the storm",
+     "When Hurricane Michael hit the Florida Panhandle, he went to help the families there. The video is on the channel.",
+     None, ["youtube"], "", []),
+    ("Now", "The new era",
+     "The road ends where it began, with players who need someone in their corner. Today that means NIL33, fair deals at a flat fee with no cut of a player's money, and records anyone can check. UnyKorn LLC, which he founded in 2026, runs both.",
+     None, ["wyobiz"], "", []),
+]
+
+
 def story(t):
+    chapters = []
+    for i, (where, title, text, quote, keys, words, photos) in enumerate(CHAPTERS, 1):
+        q = (f'<blockquote class="rq"><p>&ldquo;{e(quote[0])}&rdquo;</p><footer class="mono">{e(quote[1])}</footer></blockquote>' if quote else "")
+        w = (f'<div class="words"><span class="mono">As Kevan tells it</span><p>{e(words)}</p></div>' if words else "")
+        ph = ""
+        if photos:
+            figs = "".join(f'<div class="cfig">{img(t, s_, c_)}<p class="cap">{e(c_)}</p></div>' for s_, c_ in photos)
+            ph = f'<div class="cph n{len(photos)}">{figs}</div>'
+        body = f"<p>{e(text)}</p>" if text else ""
+        chapters.append(f'<article class="chap"><div class="cnum mono">{i:02d}</div><div class="cbody">'
+                        f'<div class="kicker mono">{e(where)}</div><h3>{e(title)}</h3>{body}{q}{w}{ph}'
+                        f'<div class="srcs">{src_links(keys)}</div></div></article>')
+    vids = "".join(f'<button class="vid3" data-yt="{v}" type="button"><span class="play" aria-hidden="true"></span>'
+                   f'<span class="vt">{e(ti)}</span><span class="vm">{e(m)}</span></button>' for v, ti, m in VIDEOS)
+
     def row(x):
         return (f'<li class="srow"><span class="yr">{e(x["year"])}</span><p>{e(x["text"])}</p>'
                 f'<span class="srcs">{src_links(x["sources"]) or "<span class=muted>Our own record</span>"}</span></li>')
     builder = "".join(row(x) for x in entries("builder"))
     player = "".join(row(x) for x in entries("player"))
-    page(t, "story", "Our story · Live the Dream Athletics",
-         "Then and now: twenty-five years of Live the Dream Athletics, each line linked to its source.", f"""
+    page(t, "story", "The road · Live the Dream Athletics",
+         "The road from Beloit to Indian Hills, Troy, pro ball, Tucson and Panama, and why Live the Dream exists. Every chapter linked to its source.", f"""
 <section class="pagehead"><div class="wrap">
-  <div class="kicker mono">Our story</div>
-  <h1 class="as-h2">Then, <em>and now.</em></h1>
-  <p class="big narrow">The old era was gloves, clinics, camps and phone calls to college coaches. The new era keeps all of that and adds two things the game never had: fair, open deals for athletes, and a record nobody can quietly change. Every line here links to its source.</p>
+  <div class="kicker mono">The road</div>
+  <h1 class="as-h2">The road <em>we travelled.</em></h1>
+  <p class="big narrow">Live the Dream wasn't planned in an office. It came out of a road: small towns, bus rides, a few good coaches, a lot of nights when the dream looked done. Here it is, stop by stop, with the people who wrote it down at the time.</p>
 </div></section>
+<section class="tight"><div class="wrap"><div class="road">{"".join(chapters)}</div></div></section>
+<section class="tight"><div class="wrap">
+  <div class="kicker">Watch</div><h2>On <em>film.</em></h2>
+  <p class="muted small">Videos load from youtube-nocookie.com only when you press play.</p>
+  <div class="vids3">{vids}</div>
+</div></section>
+<section class="tight"><div class="wrap"><div class="kicker">The record</div><h2>Every line, <em>sourced.</em></h2></div></section>
 <section class="tight"><div class="wrap two3">
   <div><h2>The program</h2><ol class="stl">{builder}</ol></div>
   <div><h2>The founder, as a player</h2><ol class="stl">{player}</ol>
@@ -312,6 +406,8 @@ Not a charity, investment or token. Gifts are not investments; supporter badges 
 def build(t):
     v2.page = page          # v2 page bodies, v3 shell
     v2.NAV = NAV
+    # Players are held in data/people.json but kept off the public people page for now (Kevan, 2026-11-08).
+    v2.PEOPLE[:] = [p for p in v2.PEOPLE if p.get("group") != "Players"]
     v2.build(t)
     home(t); story(t); athletes(t); sponsors(t)
     if not t.preview:
