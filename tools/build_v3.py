@@ -20,7 +20,7 @@ import build_v2 as v2  # noqa: E402
 
 ROOT = v2.ROOT
 e = html.escape
-V3 = "1"
+V3 = "4"
 REC = json.load(open(os.path.join(ROOT, "data", "founder-record.json"), encoding="utf-8"))
 SRC = REC["sources"]
 HUB = REC["person"]["hub"]
@@ -295,7 +295,7 @@ def story(t):
             ph = f'<div class="cph n{len(photos)}">{figs}</div>'
         body = f"<p>{e(text)}</p>" if text else ""
         chapters.append(f'<article class="chap"><div class="cnum mono">{i:02d}</div><div class="cbody">'
-                        f'<div class="kicker mono">{e(where)}</div><h3>{e(title)}</h3>{body}{q}{w}{ph}'
+                        f'<div class="kicker mono">{e(where)}</div><h2 class="ct">{e(title)}</h2>{body}{q}{w}{ph}'
                         f'<div class="srcs">{src_links(keys)}</div></div></article>')
     vids = "".join(f'<button class="vid3" data-yt="{v}" type="button"><span class="play" aria-hidden="true"></span>'
                    f'<span class="vt">{e(ti)}</span><span class="vm">{e(m)}</span></button>' for v, ti, m in VIDEOS)
@@ -403,13 +403,46 @@ Not a charity, investment or token. Gifts are not investments; supporter badges 
 """
 
 
+LEGACY = ["history", "today", "families", "fund", "systems", "proof", "international", "nil33"]
+
+
+def legacy_pages(t):
+    """Regenerate the build.py pages, then re-emit each one inside the v3 shell so the whole site is one design."""
+    import re, subprocess
+    subprocess.run([sys.executable, "-I", os.path.join(ROOT, "build.py")], cwd=ROOT, check=True)
+    for name in LEGACY:
+        path = os.path.join(ROOT, "public", name, "index.html")
+        old = open(path, encoding="utf-8").read()
+        title = html.unescape(re.search(r"<title>(.*?)</title>", old, re.S).group(1))
+        desc = html.unescape(re.search(r'<meta name="description" content="(.*?)"', old, re.S).group(1))
+        inner = re.search(r'<main class="wrap">(.*)</main>', old, re.S).group(1)
+        page(t, name, title, desc, f'<div class="legacy"><div class="wrap">{inner}</div></div>')
+
+
+def notfound(t):
+    page(t, "404", "Page not found · Live the Dream Athletics", "That page isn't here.", f"""
+<section class="pagehead"><div class="wrap">
+  <div class="kicker mono">404</div>
+  <h1 class="as-h2">That page isn't <em>here.</em></h1>
+  <p class="big narrow">It may have moved when we rebuilt the site. Start with the road, or go home.</p>
+  <div class="btns"><a class="btn solid" href="/story/">The road</a><a class="btn" href="/">Home</a></div>
+</div></section>""")
+    src = os.path.join(ROOT, "public", "404", "index.html")
+    os.replace(src, os.path.join(ROOT, "public", "404.html"))
+    os.rmdir(os.path.dirname(src))
+
+
 def build(t):
+    if not t.preview:
+        legacy_pages(t)     # runs build.py first; v2/v3 then overwrite the pages they own
     v2.page = page          # v2 page bodies, v3 shell
     v2.NAV = NAV
     # Players are held in data/people.json but kept off the public people page for now (Kevan, 2026-11-08).
     v2.PEOPLE[:] = [p for p in v2.PEOPLE if p.get("group") != "Players"]
     v2.build(t)
     home(t); story(t); athletes(t); sponsors(t)
+    if not t.preview:
+        notfound(t)
     if not t.preview:
         open(os.path.join(ROOT, "public", "llms.txt"), "w", encoding="utf-8", newline="\n").write(LLMS)
 
