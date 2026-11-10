@@ -1,0 +1,11 @@
+{
+  "_about": "Source for the LTDA collection records (RWA: real-world archive). Each entry becomes one canonical record file; the record file's SHA-256 is a Merkle leaf. Photo hashes are of the files exactly as Kevan sent them (data/intake/2026-10-26-onedrive-batch/hashes.tsv). Stories are Kevan's own words from chat 2026-10-26. Fields marked 'to confirm' or 'to record' are his to fill before the version that gets anchored.",
+  "records": [
+    { "id": "LTDA-001", "kind": "artifact", "title": "Passed down", "story": "My game bat, and below it my son. The legacy of playing ball is passing it on to your kids.", "era": "to confirm", "photo": "b12" },
+    { "id": "LTDA-002", "kind": "artifact", "title": "Hall of Fame jerseys", "story": "Framed jerseys from the night I was inducted into the Troy University Hall of Fame. One reads MAYOTTE 1.", "era": "induction year to confirm", "photo": "b15" },
+    { "id": "LTDA-003", "kind": "document", "title": "Scrapbook: Little League", "story": "Me as a kid in Little League. Signed “my #1 fan, love Kevan.”", "era": "childhood", "photo": "b03" },
+    { "id": "LTDA-004", "kind": "document", "title": "Scrapbook: the stance", "story": "Me as a kid: the batting stance, and the team photo below.", "era": "childhood", "photo": "b02" },
+    { "id": "LTDA-005", "kind": "photograph", "title": "Falcons uniform", "story": "In my Falcons uniform, with my grandmother.", "era": "Indian Hills years, to confirm", "photo": "b26" },
+    { "id": "LTDA-006", "kind": "photograph", "title": "At the plate", "story": "Me at the plate.", "era": "to confirm", "photo": "b22" }
+  ]
+}

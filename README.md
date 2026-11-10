@@ -231,7 +231,7 @@ flowchart TD
   N -->|x402 settles to| G["Genesis402 rail<br/>ERC-8004 agent #95721"]:::real
 ```
 
-Code homes: this repository (LTDA site), `FTHTrading/blockchainfraud` (the worker that serves nil33.com), `FTHTrading/powerpunch-chain` (Power Punch, 3FS, the `pp-chain` contracts, and LTDA's internal planning docs).
+Code homes: this repository (LTDA site), the nil33.com repository (the worker that serves nil33.com), `FTHTrading/powerpunch-chain` (Power Punch, 3FS, the `pp-chain` contracts, and LTDA's internal planning docs).
 
 ## 9. Repository layout
 

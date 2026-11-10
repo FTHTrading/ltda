@@ -1,0 +1,146 @@
+{
+  "_rules": "A person appears on the public site only after Kevan confirms the relationship and the person says yes. Role lines state history, never endorsement. Working notes are kept outside this repository.",
+  "people": [
+    {
+      "id": "john-mayotte",
+      "name": "John Mayotte",
+      "group": "Coaches who shaped me",
+      "relationship": "Kevan's college coach at Troy. Years later, when Kevan was director of baseball at Montverde Academy, he hired Coach Mayotte as head coach for the season; he and his wife lived on campus.",
+      "public_facts": "Troy head coach 1991-2002; led Troy to the 1993 NCAA Division II College World Series; 386 wins at Troy. Died January 2022.",
+      "fact_sources": [
+        "https://troytrojans.com/news/2022/1/18/troy-athletics-mourns-the-loss-of-former-baseball-head-coach-john-mayotte",
+        "https://www.baseball-reference.com/bullpen/John_Mayotte"
+      ],
+      "in_memory": true,
+      "publish": false
+    },
+    {
+      "id": "cam-walker",
+      "name": "Cam Walker",
+      "group": "Coaches who shaped me",
+      "relationship": "Kevan's college coach at Indian Hills Community College. He came to Montverde Academy for Scout Day, so both of Kevan's college coaches helped run the camp.",
+      "public_facts": "Indian Hills head coach 1993-2018; NJCAA Baseball Coaches Association Hall of Fame (2012).",
+      "fact_sources": [
+        "https://www.baseball-reference.com/bullpen/Indian_Hills_Community_College",
+        "https://jucogj.org/hof.aspx?hof=97"
+      ],
+      "publish": false
+    },
+    {
+      "id": "rick-schu",
+      "name": "Rick Schu",
+      "group": "The game's inside",
+      "relationship": "Kevan's hitting coach in the Arizona Diamondbacks system; 'the best hitting coach I ever had.' Kevan visited him at Nationals spring training (and brought a case of Budweiser).",
+      "public_facts": "Coached with four Diamondbacks affiliates 1998-2001, then Arizona's minor league hitting coordinator and later its major league hitting coach; Washington Nationals hitting coach 2013-2017.",
+      "fact_sources": [
+        "https://www.baseball-reference.com/bullpen/Rick_Schu",
+        "https://www.mlb.com/press-release/giants-name-rick-schu-assistant-hitting-coach-261136716",
+        "https://www.mlb.com/news/nationals-promote-rick-schu-to-hitting-coach/c-54355284"
+      ],
+      "publish": false
+    },
+    {
+      "id": "mike-rizzo",
+      "name": "Mike Rizzo",
+      "group": "The game's inside",
+      "relationship": "Came to Kevan's grandmother's house and signed him for the Arizona Diamondbacks",
+      "public_facts": "Arizona Diamondbacks scout from 1998, then scouting director; Washington Nationals assistant GM 2007-2008 and general manager from 2009.",
+      "fact_sources": [
+        "https://en.wikipedia.org/wiki/Mike_Rizzo",
+        "https://baseballamerica.com/?p=37645"
+      ],
+      "publish": false
+    },
+    {
+      "id": "alan-nero",
+      "name": "Alan Nero",
+      "group": "The game's inside",
+      "relationship": "Kevan's mentor; hired Kevan at Octagon, where Kevan worked for him in the baseball division",
+      "public_facts": "Longtime baseball agent; founded CSMG, whose baseball unit joined Octagon; co-leads Octagon Baseball.",
+      "fact_sources": [
+        "https://www.chiefmarketer.com/octagon-athletes-acquires-csmgs-baseball-and-masters-units/",
+        "https://www.octagon.com/?p=2587"
+      ],
+      "publish": false
+    },
+    {
+      "id": "hank-sargent",
+      "name": "Hank Sargent",
+      "group": "The game's inside",
+      "relationship": "How we know him: to come.",
+      "public_facts": "Florida Southern assistant coach 1986-1991; scouted for the Montreal Expos and Cincinnati Reds; Angels crosschecker; player agent.",
+      "fact_sources": [
+        "https://www.baseball-reference.com/bullpen/Hank_Sargent"
+      ],
+      "publish": false
+    },
+    {
+      "id": "noro-padron",
+      "name": "Noro Padron",
+      "group": "Players",
+      "relationship": "One of our players, from Cuba.",
+      "public_facts": "",
+      "fact_sources": [],
+      "publish": false
+    },
+    {
+      "id": "the-gringo",
+      "name": "Tom Justice, \"the Gringo\"",
+      "group": "Coaches who shaped me",
+      "relationship": "Our coach in Panama, known there as the Gringo.",
+      "public_facts": "",
+      "fact_sources": [],
+      "publish": false
+    },
+    {
+      "id": "johan-camargo",
+      "name": "Johan Camargo",
+      "group": "Players",
+      "relationship": "How we know him: to come.",
+      "public_facts": "",
+      "fact_sources": [],
+      "publish": false
+    },
+    {
+      "id": "kyle-murphy",
+      "name": "Kyle Murphy",
+      "group": "Players",
+      "relationship": "One of our players. He worked on his swing with Kevan in Beloit before the Texas Rangers drafted him.",
+      "public_facts": "Drafted by the Texas Rangers in the 19th round, 2007 (Beloit Daily News, June 10, 2007).",
+      "fact_sources": [
+        "https://www.beloitdailynews.com/uncategorized/murphy-will-get-his-shot-at-pro-ball/article_d31b881b-210e-594f-ada3-91769a38e202.html"
+      ],
+      "publish": false
+    },
+    {
+      "id": "wyatt-olsen",
+      "name": "Wyatt Olsen",
+      "group": "Players",
+      "relationship": "One of our players. His father, Eric Olsen, brought Kevan back to baseball when Kevan moved home to Beloit, Wisconsin.",
+      "public_facts": "",
+      "fact_sources": [],
+      "publish": false
+    },
+    {
+      "id": "pj-connelly",
+      "name": "P.J. Connelly",
+      "group": "Players",
+      "relationship": "Kevan's teammate on the 2005 Winnipeg Goldeyes. Both are from Beloit.",
+      "public_facts": "Pitched for the Winnipeg Goldeyes in 2005, then in the Angels system (StatsCrew).",
+      "fact_sources": [
+        "https://statscrew.com/minorbaseball/stats/p-9a340e55",
+        "https://www.baseball-reference.com/register/player.fcgi?id=burns-001kev"
+      ],
+      "publish": false
+    },
+    {
+      "id": "jesus-hernandez",
+      "name": "Jesus Hernandez",
+      "group": "Players",
+      "relationship": "One of our players, from Cuba.",
+      "public_facts": "",
+      "fact_sources": [],
+      "publish": false
+    }
+  ]
+}

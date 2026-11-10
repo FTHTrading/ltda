@@ -1,0 +1,255 @@
+{
+  "_readme": "Public record used by the Live the Dream site build: published entries and their sources only. The working record is kept outside this repository.",
+  "person": {
+    "name": "Kevan Burns",
+    "legal_name": "Kevan Caldwell Burns",
+    "id": "https://kevan.unykorn.ai/#kevan-burns",
+    "hub": "https://kevan.unykorn.ai",
+    "linkedin": "https://www.linkedin.com/in/kevanburns/",
+    "roles_now": [
+      "Founder & CEO, UnyKorn LLC",
+      "Founder, Live the Dream Athletics (2001)",
+      "Founder, NIL33"
+    ],
+    "operator_now": "UnyKorn LLC (Wyoming, filed July 1, 2026, filing 2026-002019968) operates Live the Dream Athletics and NIL33."
+  },
+  "sources": {
+    "bref": {
+      "name": "Baseball-Reference register",
+      "url": "https://www.baseball-reference.com/register/player.fcgi?id=burns-001kev"
+    },
+    "patent": {
+      "name": "Google Patents, US 6,514,163",
+      "url": "https://patents.google.com/patent/US6514163B2/en"
+    },
+    "wsl": {
+      "name": "Wisconsin State League, Rookie of the Year list",
+      "url": "https://wisconsinstateleague.com/about-the-wsl/awards/rookie-of-the-year/"
+    },
+    "ihcc_aa": {
+      "name": "Indian Hills CC, baseball All-Americans",
+      "url": "https://indianhillsathletics.com/sports/bsb/all_americans"
+    },
+    "ihcc_rb": {
+      "name": "Indian Hills CC, baseball record book",
+      "url": "https://indianhillsathletics.com/sports/bsb/record_book"
+    },
+    "uf_box": {
+      "name": "Florida Gators box score, Troy State at Florida, Mar 24, 1999",
+      "url": "https://floridagators.com/sports/1999/3/24/1170_boxscore_245"
+    },
+    "bdn_2007": {
+      "name": "Jim Franz, Beloit Daily News, June 10, 2007",
+      "url": "https://www.beloitdailynews.com/uncategorized/murphy-will-get-his-shot-at-pro-ball/article_d31b881b-210e-594f-ada3-91769a38e202.html"
+    },
+    "tan2": {
+      "name": "Cecilia Tan, 24 Hour Game Diary pt 2, Oct 2003",
+      "url": "https://whyilikebaseball.com/24-game-diary-pt-2/"
+    },
+    "tan7": {
+      "name": "Cecilia Tan, 24 Hour Game Diary pt 7, Oct 19, 2003",
+      "url": "https://whyilikebaseball.com/24-hour-game-diary-pt-7/"
+    },
+    "tan8": {
+      "name": "Cecilia Tan, 24 Hour Game Diary pt 8, Oct 20, 2003",
+      "url": "https://whyilikebaseball.com/24-hour-game-diary-pt-8/"
+    },
+    "sabr": {
+      "name": "Philip J. Lowry, SABR Baseball Research Journal, 2004",
+      "url": "https://sabr.org/journal/article/i-dont-care-if-i-ever-get-back-marathons-lasting-20-or-more-innings/"
+    },
+    "kreyche": {
+      "name": "Cathy Kreyche, SABR/IWBC Women in Baseball Conference, 2024 (video)",
+      "url": "https://www.youtube.com/watch?v=HeO5W1-Q0uI"
+    },
+    "dicks": {
+      "name": "Dick's Sporting Goods, Markwort Power Punch (Adult)",
+      "url": "https://www.dickssportinggoods.com/p/markwort-adult-power-punch-hitting-and-fielding-baseball-trainer-18mkwapwrpnchdltxtra/18mkwapwrpnchdltxtra"
+    },
+    "markwort": {
+      "name": "Markwort, Power Punch Adult",
+      "url": "https://markwort.com/products/power-punch-adult"
+    },
+    "octagon": {
+      "name": "Octagon HR newsletter, Employee of the Week (scan on file)",
+      "url": "https://kevan.unykorn.ai/proof/octagon-employee-of-the-week.jpg"
+    },
+    "youtube": {
+      "name": "YouTube channel @kevanburns3675",
+      "url": "https://www.youtube.com/@kevanburns3675"
+    },
+    "wyobiz": {
+      "name": "Wyoming Secretary of State, business search",
+      "url": "https://wyobiz.wyo.gov/Business/FilingSearch.aspx"
+    },
+    "ltda": {
+      "name": "livethedreamathletics.com (own site)",
+      "url": "https://livethedreamathletics.com"
+    },
+    "troy_hof": {
+      "name": "Troy University Athletics, 2022 Troy Baseball Media Guide, p. 74",
+      "url": "https://issuu.com/troy_athletics/docs/_2022_media_guide/71"
+    },
+    "troy_notes": {
+      "name": "Troy Media Relations, 2018 Troy Baseball Game Notes (Sun Belt Tournament), p. 8, Single-Season Records: Runs",
+      "url": "https://troytrojans.com"
+    }
+  },
+  "entries": [
+    {
+      "year": "1995",
+      "era": "player",
+      "text": "Beloit Memorial High School standout, Beloit, Wisconsin.",
+      "sources": [
+        "bdn_2007"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "1996",
+      "era": "player",
+      "text": "Wisconsin State League Rookie of the Year, Janesville Aces.",
+      "sources": [
+        "wsl"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "1998",
+      "era": "player",
+      "text": "NJCAA Second Team All-American outfielder, Indian Hills Community College. 19 home runs, tied for the school's single-season top five.",
+      "sources": [
+        "ihcc_aa",
+        "ihcc_rb"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "1999",
+      "era": "player",
+      "text": "Center fielder, Troy State (NCAA Division I). 71 runs scored, fifth-most in a single season in Troy history (as of 2018).",
+      "sources": [
+        "uf_box",
+        "troy_notes",
+        "bref"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "2007",
+      "era": "player",
+      "text": "Inducted into the Troy Trojans Baseball Hall of Fame, Class of 2007 (outfield, 1999).",
+      "sources": [
+        "troy_hof"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "1999",
+      "era": "player",
+      "text": "Drafted by the Arizona Diamondbacks, 26th round. Hit .330 in his first pro summer (Missoula, South Bend).",
+      "sources": [
+        "bref"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "2001",
+      "era": "player",
+      "text": "Hit .361 / .414 / .627 at High-A Lancaster. Filed the Power Punch patent (July 2, 2001).",
+      "sources": [
+        "bref",
+        "patent"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "2001",
+      "era": "builder",
+      "text": "Founded Live the Dream Athletics.",
+      "sources": [
+        "ltda"
+      ],
+      "status": "SELF"
+    },
+    {
+      "year": "2002",
+      "era": "player",
+      "text": "Double-A El Paso, Diamondbacks organization. Hit .326.",
+      "sources": [
+        "bref"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "2003",
+      "era": "player",
+      "text": "U.S. Patent 6,514,163, \"Batting aid,\" granted Feb 4, 2003 (now expired). Double-A Tennessee, Cardinals organization.",
+      "sources": [
+        "patent",
+        "bref"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "2003",
+      "era": "builder",
+      "text": "Live the Dream ran the two-day pro camp before the 24 Hours for Africa women's game at Tucson Electric Park; its coaches worked the game. SABR lists the 127-110 final as the planned-marathon record.",
+      "sources": [
+        "tan2",
+        "tan7",
+        "tan8",
+        "sabr",
+        "kreyche"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "1999-2005",
+      "era": "player",
+      "text": "Pro career: .306 over 528 games, including independent ball at Nashua (2004) and Winnipeg (2005, .317).",
+      "sources": [
+        "bref"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "2007",
+      "era": "builder",
+      "text": "Kyle Murphy, drafted by the Texas Rangers, credits his swing work with Kevan in Beloit.",
+      "sources": [
+        "bdn_2007"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    },
+    {
+      "year": "2015-2016",
+      "era": "builder",
+      "text": "Director of Baseball, Montverde Academy.",
+      "sources": [],
+      "status": "SELF"
+    },
+    {
+      "year": "2026",
+      "era": "builder",
+      "text": "Founded UnyKorn LLC (Wyoming, July 1, 2026), which now operates Live the Dream Athletics and NIL33.",
+      "sources": [
+        "wyobiz"
+      ],
+      "status": "VERIFIED",
+      "checked": "2026-11-08"
+    }
+  ]
+}

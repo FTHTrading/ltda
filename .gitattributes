@@ -1,0 +1,2 @@
+# Collection records are hashed byte-for-byte (SHA-256 -> Merkle leaf); never convert their line endings.
+data/collection/** -text

@@ -16,3 +16,9 @@
 node_modules/
 .wrangler/
 __pycache__/
+
+# Raw photo intake: people in these need a recorded yes before anything is published
+data/intake/
+
+# Local redesign preview media (baked from intake; not cleared to publish)
+preview/media/

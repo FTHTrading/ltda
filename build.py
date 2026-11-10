@@ -3,7 +3,7 @@ B="https://basescan.org"
 C=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'data','base.json')))
 UNIT,AFF,ROOT=C['unit'],C['affiliate'],C['historyRoot']
 TX=C['txs']; TX2=C['finish']['anchorHistory2']
-NAV=[("/history/","History"),("/international/","International"),("/today/","The game today"),("/families/","Families"),("/nil33/","NIL33"),("/systems/","Systems"),("/proof/","On chain")]
+NAV=[("/","Home"),("/letter/","The letter"),("/collection/","The collection"),("/nil/","NIL"),("/people/","The people"),("/history/","History"),("/proof/","On chain")]
 FONTS='<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">'
 def short(h): return h[:8]+"…"+h[-6:]
 def tx(h,label=None): return f'<a class="chip" href="{B}/tx/{h}" target="_blank" rel="noopener">{label or "tx "+short(h)}</a>'
@@ -190,6 +190,11 @@ page("/nil33/","NIL33 · Live the Dream Athletics","NIL33: transparent NIL endor
 </div></section>
 <section><div class="panel band"><div class="split"><div><h2>How it ties to <em>Live the Dream</em></h2><ul class="list"><li>The athlete record we build with families carries into college and pro NIL.</li><li>Endorsement income stays with the athlete; nothing is borrowed against it.</li><li>Under 18: no deals without a parent's signature.</li></ul></div><div class="actions"><a class="btn primary" href="https://nil33.com">Visit nil33.com</a><a class="btn" href="https://nil33.com/chaos">What happened to college sports</a><a class="btn" href="/families/">For families</a></div></div></div></section>
 <p class="note">NIL33 is a program of UnyKorn LLC. No tokens are issued. Every paid endorsement is disclosed.</p>''')
+
+# v2 design: home hub + /letter/ /collection/ /nil/ /people/ /photos/ (replaces the home page written above)
+import sys as _sys; _sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
+from build_v2 import build as _build_v2, Target as _Target
+_build_v2(_Target("site"))
 
 open("public/404.html","w",encoding="utf-8",newline="\n").write(open("public/index.html",encoding="utf-8").read().replace("<title>Live the Dream Athletics</title>","<title>Not found · Live the Dream Athletics</title>"))
 print("built")
