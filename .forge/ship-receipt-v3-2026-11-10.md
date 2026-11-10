@@ -56,6 +56,6 @@ Performance was measured on a local Python server with no compression; re-measur
 | Lighthouse live, /story/ | perf 81 · a11y 100 · best practices 82 · SEO 100 (LCP 3.9 s) |
 
 ## Open after deploy
-- **www does not redirect** on paths that are files (e.g. `/story/` returns 200 on www). Pre-existing: Workers static assets serve matching files before the Worker runs. Fix: `"run_worker_first": true` under `assets` in wrangler.jsonc, then redeploy (needs Kevan's go).
+- ~~www does not redirect on file paths~~ FIXED 2026-11-10 on Kevan's go: `"run_worker_first": true` in wrangler.jsonc, deployed as version `8ae1cc73-e5d8-4fc3-adf9-ace66b9e30d7`. Served check: www `/`, `/story/`, `/people/`, `/proof/` and a photo all 301 to the apex with the path kept; apex pages, assets, `/api/health`, 404 and the `/powerpunch` and `/nil33` short links unchanged.
 - Best practices 82 on live (not 100 locally): likely the injected Cloudflare challenge script. Check Bot Fight Mode / JS detections on the zone.
-- Rollback stays available: `npx wrangler@4 rollback 03c8d909-a68f-4ce1-bbd6-ab0f7ad0791d`.
+- Rollback: to v3 without the www fix `npx wrangler@4 rollback ffe9e32f-3518-44aa-999c-46837dac53b1`; to v2 `npx wrangler@4 rollback 03c8d909-a68f-4ce1-bbd6-ab0f7ad0791d`.
